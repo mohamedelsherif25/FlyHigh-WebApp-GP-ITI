@@ -1,0 +1,28 @@
+/* body{
+background: linear-gradient(to bottom, #DE4E48 10%, #D8B6B3 , #F0F0F0);
+background-repeat: no-repeat;
+min-height: 100vh;
+} */
+
+.activities-area , .day{
+   /* border: 1px solid #ac817b; */
+    border-radius: 10px;
+/* background: linear-gradient(to right, #3db9ef, #F0F0F0); */
+background-image: url("../../assets/sky.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.layer{
+    background-color: #060606;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}

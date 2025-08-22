@@ -1,0 +1,316 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.headerTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filterSection {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filterToggle {
+  background: #00c3ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.filterToggle:hover {
+  background: #0096c7;
+}
+
+.filterIcon {
+  font-size: 1rem;
+}
+
+.filterContainer {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 15px;
+  width: 100%;
+  animation: slideDown 0.3s ease;
+}
+
+.filterGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.filterItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.filterInput {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 30px; 
+  transition: border-color 0.3s ease;
+}
+
+.filterInput:focus {
+  outline: none;
+  border-color: #00c3ff;
+  box-shadow: 0 0 5px rgba(0, 195, 255, 0.3);
+}
+
+.dateInput {
+  padding: 10px 30px 10px 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none; 
+}
+
+.dateInput::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 8px; 
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  z-index: 1; 
+}
+
+.dateInput:focus {
+  outline: none;
+  border-color: #00c3ff;
+  box-shadow: 0 0 5px rgba(0, 195, 255, 0.3);
+}
+
+.clearInputButton {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clearDateButton {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; 
+}
+
+.clearIcon {
+  font-size: 0.9rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.clearButton {
+  background: #dc3545;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.clearButton:hover {
+  background: #c82333;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.flightTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+}
+
+.flightTable th,
+.flightTable td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.flightTable th {
+  background-color: #00c3ff;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.thAirline { width: 12%; }
+.thFlightNumber { width: 10%; }
+.thFrom { width: 10%; }
+.thTo { width: 10%; }
+.thDeparture { width: 10%; }
+.thArrival { width: 10%; }
+.thDate { width: 10%; }
+.thPrice { width: 8%; }
+.thActions { width: 10%; }
+
+.flightTable tr {
+  transition: background-color 0.3s ease;
+}
+
+.flightTable tr:hover {
+  background-color: #f5f7fa;
+}
+
+.flightTable td {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.flightTable tr:last-child td {
+  border-bottom: none;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #1a3c34;
+  padding: 20px;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e34a59;
+  padding: 20px;
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 20px;
+}
+
+.editButton {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editIcon {
+  font-size: 1rem;
+  color: #00c3ff;
+  transition: color 0.3s ease;
+}
+
+.editButton:hover .editIcon {
+  color: #0096c7;
+}
+
+.deleteIcon {
+  font-size: 1rem;
+  color: #dc3545;
+  transition: color 0.3s ease;
+}
+
+.deleteButton:hover .deleteIcon {
+  color: #c82333;
+}
+
+.conbtn {
+  background-color: #c82333;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ 
+}
+
+.conbtn:hover {
+  background-color: #0099cc;
+}

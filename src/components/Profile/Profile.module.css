@@ -1,0 +1,46 @@
+
+.editbtn{
+    background-color: #1bcfff;
+    color: white;
+}
+.editbtn:hover{
+    background-color: #0099cc;
+}
+
+.savebtn{
+    background-color: #1bcfff;
+    color: white;
+}
+.savebtn:hover{
+    background-color: #0099cc;
+}
+
+.confirmBtn {
+  background-color: #00c3ff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirmBtn:hover {
+  background-color: #0099cc;
+}
+
+.conbtn{
+  background-color: #3db9ef;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+} 
+.conbtn:hover {
+  background-color: #0099cc;
+}

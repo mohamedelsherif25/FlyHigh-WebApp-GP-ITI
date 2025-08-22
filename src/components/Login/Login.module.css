@@ -1,0 +1,85 @@
+.login {
+    background-image: url("../../assets/flight.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.login-form{
+  width: 40%;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-control {
+  width: 100%;
+  outline: #3db9ef;
+    border: 1px solid #3db9ef;
+    background-color: transparent;
+}   
+.form-control:focus {
+  outline: 2px solid #3db9ef;
+    box-shadow: 0 0 5px 1px #0b719d;
+    background-color: transparent;
+}
+label{
+    color: #66bee4 !important;
+        font-weight: 600;
+        font-size: 1.2rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        transition: 0.3s all;
+}
+.login h1{
+  color: #3db9ef;
+    /* font-size: 4rem; */
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+}
+
+
+.login {
+    color: #0a0a0a;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a {
+    color: #3db9ef;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.login a{
+    color: #3db9ef;
+}
+.login-btn {
+  background-color: #3db9ef;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.login-btn:hover {
+  background-color: #0b719d;
+}
+
+.loginG-btn {
+  background-color: #db4437;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.loginG-btn:hover {
+  background-color: #c1351d;
+}
